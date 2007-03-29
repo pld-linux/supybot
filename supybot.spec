@@ -12,6 +12,7 @@ BuildRequires:	rpmbuild(macros) >= 1.219
 %pyrequires_eq  python
 Requires:	python-sqlite
 Requires:	python-TwistedCore
+Requires:	pydoc
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
