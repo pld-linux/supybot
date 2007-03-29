@@ -1,5 +1,4 @@
-Summary:	Bazaar-NG - a changeset oriented revision control system
-Summary(pl.UTF-8):	Bazaar-NG - system kontroli wersji zorientowany na zestawy zmian
+Summary:	A cross-platform IRC bot written in Python
 Name:		Supybot
 Version:	0.83.2
 Release:	1
