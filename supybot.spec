@@ -1,13 +1,15 @@
 Summary:	A cross-platform IRC bot written in Python
+Summary(pl.UTF-8):	Wieloplatformowy bot IRC-owy napisany w Pythonie
 Name:		Supybot
 Version:	0.83.2
 Release:	1
 License:	BSD
 Group:		Applications/Communications
-Source0:	http://dl.sourceforge.net/sourceforge/supybot/Supybot-0.83.2.tar.bz2
+Source0:	http://dl.sourceforge.net/supybot/%{name}-%{version}.tar.bz2
 # Source0-md5:	514c23a3388b65da81b9b6f1990a1912
-URL:		http://supybot.com
+URL:		http://supybot.com/
 BuildRequires:	python >= 1:2.5
+BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 %pyrequires_eq  python
 Requires:	python-sqlite
@@ -17,16 +19,32 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Supybot is a cross-platform IRC bot written in Python, known to run anywhere Python runs.
+Supybot is a cross-platform IRC bot written in Python, known to run
+anywhere Python runs.
 
 * Supybot is actively developed.
 * Supybot offers nested commands.
-* Supybot has a powerful and flexible capability system for handling security.
-* Supybot includes many plugins , and has many more ripe for the picking on this very website.
+* Supybot has a powerful and flexible capability system for handling
+  security.
+* Supybot includes many plugins, and has many more ripe for the
+  picking on this very website.
 * Supybot supports multiple servers.
 * Supybot supports multiple channels.
 * Supybot is user-friendly.
 * Supybot is developer-friendly.
+
+%description -l pl.UTF-8
+Supybot to wieloplatformowy bot IRC-owy napisany w Pythonie,
+działający na wszystkich platformach obsługiwanych przez Pythona.
+
+- Jest aktywnie rozwijany.
+- Oferuje zagnieżdżone polecenia.
+- Ma potężny i elastyczny system uprawnień do obsługi bezpieczeństwa.
+- Zawiera wiele wtyczek i można ich pobrać jeszcze więcej ze strony.
+- Obsługuje wiele serwerów.
+- Obsługuje wiele kanałów.
+- Jest przyjazny dla użytkowników.
+- Jest przyjazny dla programistów.
 
 %prep
 %setup -q
