@@ -8,7 +8,7 @@ Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/supybot/%{name}-%{version}.tar.bz2
 # Source0-md5:	72f8f28f1d847b9070be1bc5f8b002a4
 URL:		http://supybot.com/
-BuildRequires:	python >= 1:2.5
+BuildRequires:	python >= 1:2.4
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 %pyrequires_eq  python
@@ -71,6 +71,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc docs/[A-Z]* ACKS ChangeLog README RELNOTES
 %attr(755,root,root) %{_bindir}/*
-%{py_sitescriptdir}/*.egg-info
 %{py_sitescriptdir}/supybot
+%if "%{py_ver}" > "2.4"
+%{py_sitescriptdir}/*.egg-info
+%endif
 %{_mandir}/man1/*
