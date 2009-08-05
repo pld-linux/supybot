@@ -1,12 +1,12 @@
 Summary:	A cross-platform IRC bot written in Python
 Summary(pl.UTF-8):	Wieloplatformowy bot IRC-owy napisany w Pythonie
 Name:		Supybot
-Version:	0.83.3
-Release:	2
+Version:	0.83.4.1
+Release:	1
 License:	BSD
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/supybot/%{name}-%{version}.tar.bz2
-# Source0-md5:	72f8f28f1d847b9070be1bc5f8b002a4
+# Source0-md5:	96ce90559c7d6fde5e3c93174c509408
 URL:		http://supybot.com/
 BuildRequires:	python >= 1:2.4
 BuildRequires:	rpm-pythonprov
