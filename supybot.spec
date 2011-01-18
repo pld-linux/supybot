@@ -1,9 +1,7 @@
-# TODO
-# - rename to supybot
 %define		origname	Supybot
 Summary:	A cross-platform IRC bot written in Python
 Summary(pl.UTF-8):	Wieloplatformowy bot IRC-owy napisany w Pythonie
-Name:		Supybot
+Name:		supybot
 Version:	0.83.4.1
 Release:	1
 Group:		Applications/Networking
@@ -26,6 +24,8 @@ Requires:	python-dateutil
 Requires:	python-dictclient
 Requires:	python-feedparser
 Requires:	python-simplejson
+Provides:	Supybot = %{version}-%{release}
+Obsoletes:	Supybot < %{version}-%{release}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
