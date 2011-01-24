@@ -17,6 +17,8 @@ Patch0:		json.patch
 # fix karma plugin to actually work should go upstream
 Patch1:		karma-plugin.patch
 BuildRequires:	python-distribute
+BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	python-TwistedCore
 Requires:	python-TwistedNames
